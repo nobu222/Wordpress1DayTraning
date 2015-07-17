@@ -14,6 +14,10 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+        <p>
+            お世話になっております。ITP二神です。
+        </p>
+        
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -28,6 +32,7 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
+        <?php get_template_part('page-top'); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

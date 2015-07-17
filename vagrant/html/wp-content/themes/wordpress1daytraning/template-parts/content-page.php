@@ -20,6 +20,7 @@
 				'after'  => '</div>',
 			) );
 		?>
+    <?php get_template_part('page-top'); ?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

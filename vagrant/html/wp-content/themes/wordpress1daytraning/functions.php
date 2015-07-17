@@ -43,6 +43,7 @@ function wordpress1daytraning_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'wordpress1daytraning' ),
+		'secandary' => esc_html__( 'Secondary Menu', 'wordpress1daytraning' ),
 	) );
 
 	/*
