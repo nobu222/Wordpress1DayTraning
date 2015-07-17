@@ -1,0 +1,138 @@
+    1  sudo service httpd
+    2  sudo service httpd status
+    3  sudo vi /etc/httpd/conf/httpd.conf 
+    4  exit
+    5  ls
+    6  cd /var/www/html/
+    7  ls
+    8  rmdir wp
+    9  ls
+   10  ifconfig 
+   11  echo hello >index.html
+   12  curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+   13  php wp-cli.phar --info
+   14  vi /etc/
+   15  cd /etc/
+   16  ls
+   17  sudo php.ini 
+   18  sudo vi php.ini 
+   19  ls
+   20  sudo service httpd restart
+   21  cd /var/www/html/
+   22  ls
+   23  php wp-cli.phar --info
+   24  chmod +x wp-cli.phar
+   25  sudo mv wp-cli.phar /usr/local/bin/wp/
+   26  sudo mkdir /user/local/bun/wp
+   27  sudo mkdir /user/local/bin/wp
+   28  sudo mkdir /user/local/bin/wp/
+   29  sudo mkdir /usr/local/bin/wp
+   30  sudo mv wp-cli.phar /usr/local/bin/wp/
+   31  wp --info
+   32  ls
+   33  wp
+   34  ls
+   35  cd /
+   36  wp
+   37  sudo wp
+   38  cd usr/
+   39  cd bin/
+   40  cd /usr/local/bin/wp/
+   41  ls
+   42  wp
+   43  ls -l
+   44  chmod +x wp-cli.phar 
+   45  sudo chmod +x wp-cli.phar 
+   46  ls -l
+   47  cd ~
+   48  ls
+   49  ls -a
+   50  vi .bash_profile 
+   51  which ls
+   52  composer
+   53  which composer
+   54  wp
+   55  cd /usr/bin/locale
+   56  ls 
+   57  cd /usr/bin/local
+   58  cd /usr/local/bin/
+   59  ls
+   60  mv ./wp/wp-cli.phar ./wp
+   61  mv ./wp/wp-cli.phar ./
+   62  sudo mv ./wp/wp-cli.phar ./
+   63  ls
+   64  rmdir wp
+   65  su
+   66  ls
+   67  wp --info
+   68  wp update
+   69  cd ~
+   70  ls
+   71  cd ~
+   72  ls
+   73  ls -l
+   74  ls -a
+   75  wget https://github.com/wp-cli/wp-cli/raw/master/utils/wp-completion.bash
+   76  ls
+   77  vi ~/.bash_profile 
+   78  ls
+   79  source ~/.bash_profile 
+   80  vi ~/.bash_profile 
+   81  ls
+   82  source ~/.bash_profile 
+   83  wp 
+   84  wp
+   85  wp 
+   86  cd /var/www/html/
+   87  ls
+   88  rm index.html 
+   89  ls
+   90  wp co
+   91  wp core download --locale=ja
+   92  ls
+   93  mysql -u root -p
+   94  wp core config --dbname=wordpress --dbuser=wpuser --dbpass=wpuser --extra-php <<PHP
+   95  define( 'WP_DEBUG', true );
+   96  define( 'WP_DEBUG_LOG', ture);
+   97  PHP
+   98  cat wp-config.php
+   99  wp core theme
+  100  jjkkwp h
+  101  wp help
+  102  wp theme help
+  103  wp theme 
+  104  wp theme search underscore
+  105  wp help theme
+  106  wp theme list
+  107  php --ini
+  108  sudo vi /usr/local/bin/wp/php/
+  109  cd /usr/local/
+  110  cd bin/
+  111  ls
+  112  sudo vi wp
+  113  cd /var/www/html/
+  114  ls
+  115  vi wp-config.php
+  116  wp theme list
+  117  wp theme active wo
+  118  wp help thme 
+  119  wp help theme 
+  120  free
+  121  free -M
+  122  free -m
+  123  vmstat
+  124  wp theme activate wordpress1daytraning
+  125  ls
+  126  vi /etc/httpd/conf/httpd.conf 
+  127  exit
+  128  sudo vi /etc/resolv.conf 
+  129  exit
+  130  cd /var/www/html/
+  131  cd wp-content/themes/wordpress1daytraning/
+  132  ls 
+  133  cat page.php
+  134  cat single.php 
+  135  vi single.php 
+  136  exit
+  137  ls
+  138  history > ~/history.txt
