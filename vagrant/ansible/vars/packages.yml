@@ -1,0 +1,4 @@
+---
+    sys_packages: ["git","vim","ntp"]
+    php_packages: ["php-cli","php-pear","php-common","php-gd","php-mbstring","php-pecl-xdebug","php-pdo","php-mysql","php-snmp","php-devel","php-process","php-xml"]
+

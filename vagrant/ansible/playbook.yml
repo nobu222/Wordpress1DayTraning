@@ -1,0 +1,13 @@
+---
+- hosts: all
+  sudo: true
+  vars:
+    timezone: Asia/Tokyo
+  vars_files:
+    - vars/packages.yml
+  roles:
+    - init
+    - apache
+    - php
+    - mysql
+    - composer
