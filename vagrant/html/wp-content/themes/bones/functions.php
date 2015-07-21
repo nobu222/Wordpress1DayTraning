@@ -254,4 +254,18 @@ function add_slug_nav( $css, $item ) {
    }
    return $css;
 }
+
+function apt_page_ancestor() {
+    global $post; // Wordpressのグローバル変数。グローバル変数を使用するときはglobal宣言を行い使用する。
+    $anc = array_pop(get_post_ancestors($post));
+    $obj = new stdClass;
+    if($anc) {
+        $obj->ID = $anc;
+        $obj->post_title = get_post($anc)->post_title;
+    } else {
+        $obj->ID = $post->ID;
+        $obj->post_title = $post->post_title;
+    }
+    return $obj;
+}
 /* DON'T DELETE THIS CLOSING TAG */ ?>
