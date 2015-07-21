@@ -77,3 +77,10 @@
 				</div>
 
 			</header>
+<?php if (!is_front_page()) : ?>
+<?php
+        if (class_exists( 'WP_SiteManager_bread_crumb' )) :
+            WP_SiteManager_bread_crumb::bread_crumb( 'navi_element=div&elm_id=bread_crumb' );
+        endif;
+?>
+<?php endif; ?>

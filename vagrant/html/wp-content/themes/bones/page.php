@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<p>コレはpage.phpを表示しています。</p>
 			<div id="content">
 
 				<div id="inner-content" class="wrap cf">
