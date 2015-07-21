@@ -56,6 +56,7 @@
 
 
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <?php add_filter( 'nav_menu_css_class', 'add_slug_nav', 10, 2); ?>
 						<?php wp_nav_menu(array(
     					         'container' => false,                           // remove nav container
     					         'container_class' => 'menu cf',                 // class of container (should you choose to use it)
@@ -69,6 +70,7 @@
         			               'depth' => 0,                                   // limit the depth of the nav
     					         'fallback_cb' => ''                             // fallback function (if there is one)
 						)); ?>
+                        <?php remove_filter( 'nav_menu_css_class', 'add_slug_nav'); ?>
 
 					</nav>
 

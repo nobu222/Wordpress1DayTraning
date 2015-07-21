@@ -244,4 +244,14 @@ function bones_fonts() {
 
 add_action('wp_enqueue_scripts', 'bones_fonts');
 
+/*
+ * My function add
+ */
+function add_slug_nav( $css, $item ) {
+   if ($item->object == 'page') {
+       $page = get_post($item->object_id);
+       $css[] = 'menu-item-slug-' . esc_attr($page->post_name);
+   }
+   return $css;
+}
 /* DON'T DELETE THIS CLOSING TAG */ ?>
