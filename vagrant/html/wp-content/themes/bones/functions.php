@@ -268,4 +268,16 @@ function apt_page_ancestor() {
     }
     return $obj;
 }
+function apt_category_id($tax='category') {
+    global $post;
+    $cat_id = 0;
+    if (is_single()) {
+        $cat_info = get_the_terms($post->ID, $tax);
+        if ($cat_info) {
+            $cat_id = array_shift($cat_info)->term_id;
+        }
+    }
+    return $cat_id;
+}
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
