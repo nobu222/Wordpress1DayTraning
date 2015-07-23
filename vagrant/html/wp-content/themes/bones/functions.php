@@ -272,7 +272,7 @@ function apt_category_id($tax='category') {
     global $post;
     $cat_id = 0;
     if (is_single()) {
-        $cat_info = get_the_terms($post->ID, $tax);
+        $cat_info = get_the_terms($post->ID, $tax); //投稿に割り当てられたカスタム分類の取得
         if ($cat_info) {
             $cat_id = array_shift($cat_info)->term_id;
         }
