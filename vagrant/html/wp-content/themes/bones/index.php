@@ -6,7 +6,7 @@
 
 <ul>
     <?php
-        query_posts( 'cat=1'); // Wordpressループの条件を設定する
+        query_posts( 'post_type=post'); // Wordpressループの条件を設定する
         while (have_posts()) :
             the_post();
             get_template_part('content-top-info');

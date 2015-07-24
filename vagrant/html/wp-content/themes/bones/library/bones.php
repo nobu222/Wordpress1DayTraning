@@ -209,8 +209,10 @@ function bones_theme_support() {
 	// registering wp3+ menus
 	register_nav_menus(
 		array(
-			'main-nav' => __( 'The Main Menu', 'bonestheme' ),   // main nav in header
-			'footer-links' => __( 'Footer Links', 'bonestheme' ) // secondary nav in footer
+			'place_pc_global' => __( 'PCグローバル', 'bonestheme' ), // PCグローバル位置用ナビ定義
+			'place_pc_utility' => __( 'PCユーティリティ', 'bonestheme' ),
+			'place_sp_global' => __( 'SPグローバル', 'bonestheme' ), // PCグローバル位置用ナビ定義
+			'place_sp_utility' => __( 'SPユーティリティ', 'bonestheme' ), 
 		)
 	);
 
