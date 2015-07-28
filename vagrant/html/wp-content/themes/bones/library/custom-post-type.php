@@ -22,6 +22,34 @@ function bones_flush_rewrite_rules() {
 	flush_rewrite_rules();
 }
 
+/**
+* カスタム投稿タイプ example
+*/
+add_action('init', 'register_post_type_and_taxonomy');
+function register_post_type_and_taxonomy(){
+    $labels = array(
+        'name' => '営業所情報',
+        'add_new_item' => '営業所を追加',
+        'edit_item' => '営業所の編集',
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'capability_type' => 'post',
+        'hierarchical' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'custom-fields',
+            'thumbnail',
+            'page-attributes',
+        )
+    );
+    register_post_type('branch', $args);
+}
+
+
 // let's create the function for the custom type
 function custom_post_example() { 
 	// creating (registering) the custom type 

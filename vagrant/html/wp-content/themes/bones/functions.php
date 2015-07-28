@@ -279,5 +279,13 @@ function apt_category_id($tax='category') {
     }
     return $cat_id;
 }
+function apt_add_current($output) {
+    global $post;
+//    $oid = "page-item-{$post->ID}";
+//    $cid = "$oid current_page_item";
+//    $output = preg_replace("/$oid/", $cid, $output);
+
+    return $output;
+}
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
